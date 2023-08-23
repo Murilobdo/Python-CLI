@@ -15,7 +15,7 @@ def clear():
 def createFiles():
     for folder in FOLDERS:
         print(f'Baixando {folder}...')
-        i = 0
+        i = 0  
         while i < (QTD_FILES_GENERATE * random.randint(1, 5)):
             response = req.get('https://picsum.photos/200/300.jpg')
             if response.status_code == 200:
